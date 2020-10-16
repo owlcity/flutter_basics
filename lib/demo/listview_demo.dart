@@ -10,7 +10,7 @@ class ListViewDemo extends StatelessWidget {
           children: <Widget>[
             Image(
               image: NetworkImage(
-                  'https://a.vpimg3.com/upload/merchandise/pdcvis/603323/2020/0730/41/523ebb25-8795-4b37-98ac-e5429c82174c_840x840_90.jpg'),
+                  posts[index].imageUrl),
             ),
             SizedBox(height: 16.0),
             Text(posts[index].title,
