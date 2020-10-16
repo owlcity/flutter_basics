@@ -4,6 +4,7 @@ import 'package:myapp_iterm/demo/draw_demo.dart';
 import 'package:myapp_iterm/demo/bottom_navigation_bar_demo.dart';
 import 'package:myapp_iterm/demo/layout_demo.dart';
 import 'package:myapp_iterm/demo/listview_demo.dart';
+import 'package:myapp_iterm/demo/sliver_demo.dart';
 import 'package:myapp_iterm/demo/view_demo.dart';
 
 void main() => runApp(App());
@@ -15,6 +16,7 @@ class App extends StatelessWidget {
       // home: Hello()
       debugShowCheckedModeBanner: false,
       home: Home(),
+      // home: SliverDemo(),
       theme: ThemeData(
           primaryColor: Colors.yellow,
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -62,7 +64,8 @@ class Home extends StatelessWidget {
               ListViewDemo(),
               BaseDemo(),
               LayoutDemo(),
-              ViewWrap()
+              // ViewWrap()
+              SliverDemo()
               // Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
             ],
           ),

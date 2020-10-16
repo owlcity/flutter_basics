@@ -21,7 +21,7 @@ class DrawDemo extends StatelessWidget {
           accountEmail: Text('211ii-@qq.com'),
           currentAccountPicture: CircleAvatar(
             backgroundImage: NetworkImage(
-                'https://avatars3.githubusercontent.com/u/6355825?s=60&v=4'),
+                'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3537802314,1132345328&fm=26&gp=0.jpg'),
           ),
           decoration: BoxDecoration(
               color: Colors.yellow[400],
