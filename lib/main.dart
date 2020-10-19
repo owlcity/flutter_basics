@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp_iterm/demo/base_demo.dart';
 import 'package:myapp_iterm/demo/draw_demo.dart';
 import 'package:myapp_iterm/demo/bottom_navigation_bar_demo.dart';
+import 'package:myapp_iterm/demo/forms_demo.dart';
 import 'package:myapp_iterm/demo/layout_demo.dart';
 import 'package:myapp_iterm/demo/listview_demo.dart';
 import 'package:myapp_iterm/demo/sliver_demo.dart';
@@ -16,14 +17,15 @@ class App extends StatelessWidget {
     return MaterialApp(
       // home: Hello()
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      // home: Home(),
       // home: NavigatorDemo(),
       // home: SliverDemo(),
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => Home(),
-      //   // '/about': (context) => Page(title: 'About'),
-      // },
+      initialRoute: '/forms',
+      routes: {
+        '/': (context) => Home(),
+        '/forms': (context) => FormDemo()
+        // '/about': (context) => Page(title: 'About'),
+      },
       theme: ThemeData(
           primaryColor: Colors.yellow,
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
