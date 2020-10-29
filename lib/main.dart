@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:learn_material/components/2-richtext.dart';
 // import 'package:learn_material/components/2.3text-field.dart';
 import 'package:learn_material/components/2.4text_example.dart';
+import 'package:learn_material/components/3.1button.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -34,7 +35,13 @@ class MyApp extends StatelessWidget {
       // home: RichTextDemo()
       // home: LayoutRowDemo()
       // home: TextFieldDemo()
-      home: TextComponentsDemo(),
+      // home: TextComponentsDemo(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Material-基础组件'),
+        ),
+        body: ButtonDemo(),
+      )
     );
   }
 }
