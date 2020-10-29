@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learn_material/components/1-text.dart';
-import 'package:learn_material/components/2-richtext.dart';
+// import 'package:learn_material/components/1-text.dart';
+// import 'package:learn_material/components/2-richtext.dart';
+// import 'package:learn_material/components/2.3text-field.dart';
+import 'package:learn_material/components/2.4text_example.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -29,13 +31,10 @@ class MyApp extends StatelessWidget {
       //   )
       // ),
       // home: TextDemo()
-      home: RichTextDemo()
+      // home: RichTextDemo()
       // home: LayoutRowDemo()
-      // home: ButtonDemo()
-      // home: ImageDemo()
-      // home: IconsDemo()
-      // home: SwitchAndCheckboxDemo(),
-      // home: FormDemo(),
+      // home: TextFieldDemo()
+      home: TextComponentsDemo(),
     );
   }
 }
