@@ -7,6 +7,8 @@ import 'package:learn_material/components/3.1button.dart';
 import 'package:learn_material/components/3.2radio.dart';
 import 'package:learn_material/components/3.3checkbox.dart';
 import 'package:learn_material/components/3.4slider.dart';
+import 'package:learn_material/components/3.5switch.dart';
+import 'package:learn_material/components/3.6progress.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -46,7 +48,9 @@ class MyApp extends StatelessWidget {
         // body: ButtonDemo(),
         // body: RadioDemo(),
         // body: CheckboxDemo(),
-        body: SliderDemo(),
+        // body: SliderDemo(),
+        // body: SwitchDemo()
+        body: ProgressDemo(),
       )
     );
   }
