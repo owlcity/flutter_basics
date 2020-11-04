@@ -21,9 +21,9 @@ class ProgressDemo extends StatelessWidget {
           backgroundColor: Colors.greenAccent,
           valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
         ),
-        CupertinoActivityIndicator(
-          radius: 20  // radius参数是半径，值越大，控件越大。
-        )
+        // CupertinoActivityIndicator(
+        //   radius: 30  // radius参数是半径，值越大，控件越大。
+        // )
       ],
     );
   }
