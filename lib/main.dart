@@ -10,6 +10,7 @@ import 'package:learn_material/components/3.4slider.dart';
 import 'package:learn_material/components/3.5switch.dart';
 import 'package:learn_material/components/3.6progress.dart';
 import 'package:learn_material/components/3.7image.dart';
+import 'package:learn_material/components/3.8image-case.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -52,7 +53,8 @@ class MyApp extends StatelessWidget {
         // body: SliderDemo(),
         // body: SwitchDemo()
         // body: ProgressDemo(),
-        body: ImageDemo(),
+        // body: ImageDemo(),
+        body: ImageCaseDemo(),
       )
     );
   }
