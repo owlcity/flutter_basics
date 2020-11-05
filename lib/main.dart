@@ -13,6 +13,8 @@ import 'package:learn_material/components/3.7image.dart';
 import 'package:learn_material/components/3.8image-case.dart';
 import 'package:learn_material/components/3.9icon-fonts.dart';
 import 'package:learn_material/components/4.1layout.dart';
+import 'package:learn_material/components/4.2.1stack.dart';
+import 'package:learn_material/components/4.2.2indexedStack.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -58,7 +60,9 @@ class MyApp extends StatelessWidget {
         // body: ImageDemo(),
         // body: ImageCaseDemo(),
         // body: IconFontsDemo(),
-        body: LayoutDemo(),
+        // body: LayoutDemo(),
+        // body: StackDemo()
+        body: IndexedStackDemo(),
       )
     );
   }
