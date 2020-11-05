@@ -27,6 +27,7 @@ import 'package:learn_material/components/5.4fractionally.dart';
 import 'package:learn_material/components/5.5.1flexible.dart';
 import 'package:learn_material/components/5.6myInfo.dart';
 import 'package:learn_material/components/5.7chart.dart';
+import 'package:learn_material/components/6.4guesture_progress.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -86,7 +87,8 @@ class MyApp extends StatelessWidget {
         // body: FractionallySizedBoxDemo(),
         // body: FlexibleDemo(),
         // body: MyInfoDemo(),
-        body: CylinderChart(),
+        // body: CylinderChart(),
+        body: ButtonCase(),
 
 
       )
