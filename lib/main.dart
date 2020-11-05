@@ -19,6 +19,8 @@ import 'package:learn_material/components/4.3wrap.dart';
 import 'package:learn_material/components/4.4flow.dart';
 import 'package:learn_material/components/4.5setting.dart';
 import 'package:learn_material/components/4.6flowMenu.dart';
+import 'package:learn_material/components/4.7flow_circle.dart';
+import 'package:learn_material/components/5.1container.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -70,7 +72,10 @@ class MyApp extends StatelessWidget {
         // body: WrapDemo(),
         // body: FlowDemo(),
         // body: SettingDemo()
-        body: DemoFlowPopMenu(),
+        // body: DemoFlowPopMenu(),
+        // body: DemoFlowMenu(),
+        body: ContainerDemo(),
+
 
       )
     );
