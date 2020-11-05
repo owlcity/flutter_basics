@@ -25,6 +25,7 @@ import 'package:learn_material/components/5.2sized_box.dart';
 import 'package:learn_material/components/5.3aspect_ratio.dart';
 import 'package:learn_material/components/5.4fractionally.dart';
 import 'package:learn_material/components/5.5.1flexible.dart';
+import 'package:learn_material/components/5.6myInfo.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -82,7 +83,8 @@ class MyApp extends StatelessWidget {
         // body: SizedBoxDemo(),
         // body: AspectRatioDemo(),
         // body: FractionallySizedBoxDemo(),
-        body: FlexibleDemo(),
+        // body: FlexibleDemo(),
+        body: MyInfoDemo(),
 
 
       )
