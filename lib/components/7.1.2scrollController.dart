@@ -33,14 +33,14 @@ class _ScrollControllerDemoState extends State<ScrollControllerDemo> {
         ),
         Expanded(
             child: ListView.builder(
-          controller: _controller,
-          reverse: false,
-          itemBuilder: (BuildContext context, int index) {
-            return _ListItem(title: '$index');
-          },
-          itemCount: 40,
-          itemExtent: 50,
-        ))
+              controller: _controller,
+              reverse: false,
+              itemBuilder: (BuildContext context, int index) {
+                return _ListItem(title: '$index');
+              },
+              itemCount: 40,
+              itemExtent: 50,
+            ))
       ],
     );
   }
