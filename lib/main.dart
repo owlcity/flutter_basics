@@ -38,6 +38,7 @@ import 'package:learn_material/components/7.6PageViewAnimate.dart';
 import 'package:learn_material/components/8.1sliver.dart';
 import 'package:learn_material/components2/8.2SliverAppBar.dart';
 import 'package:learn_material/components2/8.3SliverPresistentHeader.dart';
+import 'package:learn_material/components2/8.4SliverToBoxAdapter.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -108,7 +109,8 @@ class MyApp extends StatelessWidget {
         // body: ViewPage(),
         // body: SliverListDemo()
         // body: SliverAppBarDemo(),
-        body: SliverPresistentHeaderDemo()
+        // body: SliverPresistentHeaderDemo()
+        body: SliverToBoxAdapterDemo(),
 
 
       )
