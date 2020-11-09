@@ -32,6 +32,8 @@ import 'package:learn_material/components/7.1.2scrollController.dart';
 import 'package:learn_material/components/7.1listview.dart';
 import 'package:learn_material/components/7.2gridView.dart';
 import 'package:learn_material/components/7.3singleChildScrollview.dart';
+import 'package:learn_material/components/7.4pageview.dart';
+import 'package:learn_material/components/7.5datatable.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -96,7 +98,9 @@ class MyApp extends StatelessWidget {
         // body: ListViewDemo(),
         // body: ScrollControllerDemo(),
         // body: GridViewDemo(),
-        body: SignleChildScrollViewDemo(),
+        // body: SignleChildScrollViewDemo(),
+        // body: PageViewDemo(),
+        body: DataTableDemo2(),
 
 
       )
