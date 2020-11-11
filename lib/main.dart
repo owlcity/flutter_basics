@@ -43,6 +43,7 @@ import 'package:learn_material/components2/8.5CustomScrollView.dart';
 import 'package:learn_material/components2/9.1DateSelect.dart';
 import 'package:learn_material/components2/9.5popMenuButton.dart';
 import 'package:learn_material/components2/9.6Dialog.dart';
+import 'package:learn_material/components2/9.7shape.dart';
 // import 'package:learn_material/components/5-icons.dart';
 // import 'package:learn_material/components/6-switch.dart';
 // import 'package:learn_material/components/7-form.dart';
@@ -127,7 +128,8 @@ class MyApp extends StatelessWidget {
         // body: CustomScrollViewDemo(),
         // body: DateSelectDemo(),
         // body: PopMenuButtonDemo(),
-        body: DialogDemo(),
+        // body: DialogDemo(),
+        body: ShapeDemo(),
 
 
       )
