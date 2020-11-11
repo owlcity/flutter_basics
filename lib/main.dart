@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_material/demo/bottom_navigationbar_demo.dart';
 import 'package:learn_material/demo/draw_demo.dart';
 import 'package:learn_material/demo/listView_demo.dart';
 
@@ -65,7 +66,8 @@ class Home extends StatelessWidget {
               Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
             ],
           ),
-          drawer: DrawerDemo()        
+          drawer: DrawerDemo(),
+          bottomNavigationBar: BottomNavigationBarDemo(),        
         ));
   }
 }
