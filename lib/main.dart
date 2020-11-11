@@ -24,26 +24,46 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Material'),
-        elevation: 3.0,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          tooltip: 'Navigation',
-          onPressed: () {
-            print('leading');
-          }),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            tooltip: 'Search',
-            onPressed: () => debugPrint('Search button is pressed.'),
+    return DefaultTabController(
+      length: 3, 
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Material'),
+          elevation: 3.0,
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: 'Navigation',
+            onPressed: () {
+              print('leading');
+            }),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: () => debugPrint('Search button is pressed.'),
+            )
+          ],
+          bottom: TabBar(
+            unselectedLabelColor: Colors.black,
+            indicatorColor: Colors.black,
+            indicatorSize: TabBarIndicatorSize.label,
+            indicatorWeight: 1.0,
+            tabs: <Widget>[
+              Tab(icon: Icon(Icons.local_florist)),
+              Tab(icon: Icon(Icons.change_history)),
+              Tab(icon: Icon(Icons.directions_bike)),
+            ]
           )
-        ],
-      ),
-      // body: Hello(),
-      body: ListViewDemo(),
+        ),
+        // body: Hello(),
+        body: TabBarView(
+          children: <Widget>[
+            Icon(Icons.local_florist, size: 128.0, color: Colors.black12),
+            Icon(Icons.change_history, size: 128.0, color: Colors.black12),
+            Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+          ],
+        ),
+      )
     );
   }
 }
