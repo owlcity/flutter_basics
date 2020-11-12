@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'flutter 学习',
       theme: ThemeData(
-          primarySwatch: Colors.yellow,
+          primarySwatch: Colors.blue,
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70),
       debugShowCheckedModeBanner: false,

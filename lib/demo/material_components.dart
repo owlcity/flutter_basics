@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:learn_material/demo/button_demo.dart';
 import 'package:learn_material/demo/floating_action_button.dart';
 import 'package:learn_material/demo/popup_menu_button.dart';
+import './form_demo.dart';
+import './checkbox_demo.dart';
+import './radio_demo.dart';
+import './switch_demo.dart';
+import 'slider_demo.dart';
 
 class MaterialComponentsDemo extends StatelessWidget {
   const MaterialComponentsDemo({Key key}) : super(key: key);
@@ -15,14 +20,14 @@ class MaterialComponentsDemo extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'Slider', page: SliderDemo()),
+          ListItem(title: 'Switch', page: SwitchDemo()),
+          ListItem(title: 'Radio', page: RadioDemo()),
+          ListItem(title: 'Checkbox', page: CheckboxDemo()),
+          ListItem(title: 'Form', page: FormDemo()),
+          ListItem(title: 'PopupMenuButton', page: PopupMenuButtonDemo()),
           ListItem(
-            title: 'PopupMenuButton', 
-            page: PopupMenuButtonDemo()
-          ),
-          ListItem(
-            title: 'FloatingActionButton', 
-            page: FloatingActionButtonDemo()
-          ),
+              title: 'FloatingActionButton', page: FloatingActionButtonDemo()),
           ListItem(title: 'Button', page: ButtonDemo()),
         ],
       ),
@@ -40,11 +45,8 @@ class ListItem extends StatelessWidget {
     return ListTile(
       title: Text(title),
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => page
-          )
-          );
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => page));
       },
     );
   }
