@@ -5,6 +5,7 @@ import 'package:learn_material/demo/container_box_decoration.dart';
 import 'package:learn_material/demo/draw_demo.dart';
 import 'package:learn_material/demo/grid_view_demo.dart';
 import 'package:learn_material/demo/listView_demo.dart';
+import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
 
 void main() {
@@ -30,6 +31,16 @@ class MyApp extends StatelessWidget {
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // return DefaultTabControllerDemo();
+    return SliverDemo();
+  }
+}
+
+class DefaultTabControllerDemo extends StatelessWidget {
+  const DefaultTabControllerDemo({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -68,6 +79,7 @@ class Home extends StatelessWidget {
             children: <Widget>[
               // Icon(Icons.local_florist, size: 128.0, color: Colors.black12),
               ContainerBoxDemo(),
+
               BasicDemo(),
               // Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
               GridViewDemo(),
@@ -75,7 +87,7 @@ class Home extends StatelessWidget {
             ],
           ),
           drawer: DrawerDemo(),
-          bottomNavigationBar: BottomNavigationBarDemo(),        
+          bottomNavigationBar: BottomNavigationBarDemo(),
         ));
   }
 }
