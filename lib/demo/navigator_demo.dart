@@ -17,11 +17,13 @@ class NavigatorDemo extends StatelessWidget {
             FlatButton(
               child: Text('About'),
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => Page(title: 'About')
-                  )
-                );
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(
+                //     builder: (BuildContext context) => PageDemo(title: 'About')
+                //   )
+                // );
+                // 在material中定义后
+                Navigator.pushNamed(context, '/about');
               },
             )
           ],
@@ -31,10 +33,10 @@ class NavigatorDemo extends StatelessWidget {
   }
 }
 
-class Page extends StatelessWidget {
+class PageDemo extends StatelessWidget {
   final String title;
 
-  const Page({Key key, this.title}) : super(key: key);
+  const PageDemo({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

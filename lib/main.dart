@@ -8,6 +8,7 @@ import 'package:learn_material/demo/listView_demo.dart';
 import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
+import './demo/navigator_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,13 @@ class MyApp extends StatelessWidget {
           splashColor: Colors.white70),
       debugShowCheckedModeBanner: false,
       // home: Home(),
-      home: NavigatorDemo(),
+      // home: NavigatorDemo(),
+      initialRoute: '/',
+      routes: {
+        // '/': (context) =>  NavigatorDemo(),
+        '/': (context) => DefaultTabControllerDemo(),
+        '/about': (context) => PageDemo(title: 'About'),
+      },
     );
   }
 }
@@ -80,7 +87,8 @@ class DefaultTabControllerDemo extends StatelessWidget {
           body: TabBarView(
             children: <Widget>[
               // Icon(Icons.local_florist, size: 128.0, color: Colors.black12),
-              ContainerBoxDemo(),
+              // ContainerBoxDemo(),
+              ListViewDemo(),
 
               BasicDemo(),
               // Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
