@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_material/model/post.dart';
-
+import 'post_show.dart';
 
 class ListViewDemo extends StatelessWidget {
   const ListViewDemo({Key key}) : super(key: key);
@@ -19,25 +19,23 @@ class ListViewDemo extends StatelessWidget {
                 posts[index].title,
                 style: Theme.of(context).textTheme.bodyText1,
               ),
-              Text(
-                posts[index].author,
-                style: Theme.of(context).textTheme.bodyText2
-              ),
+              Text(posts[index].author,
+                  style: Theme.of(context).textTheme.bodyText2),
               SizedBox(height: 16.0),
             ],
           ),
           Positioned.fill(
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
+              child: Material(
+            color: Colors.transparent,
+            child: InkWell(
                 splashColor: Colors.white.withOpacity(0.3),
                 highlightColor: Colors.white.withOpacity(0.1),
                 onTap: () {
                   debugPrint('Tap');
-                }
-              ),
-            )
-          )
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => PostShowDemo(post: posts[index])));
+                }),
+          ))
         ],
       ),
     );
