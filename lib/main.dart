@@ -5,6 +5,7 @@ import 'package:learn_material/demo/container_box_decoration.dart';
 import 'package:learn_material/demo/draw_demo.dart';
 import 'package:learn_material/demo/grid_view_demo.dart';
 import 'package:learn_material/demo/listView_demo.dart';
+import 'package:learn_material/demo/material_components.dart';
 import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
@@ -28,11 +29,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Home(),
       // home: NavigatorDemo(),
-      initialRoute: '/',
+      initialRoute: '/mdc',
       routes: {
         // '/': (context) =>  NavigatorDemo(),
         '/': (context) => DefaultTabControllerDemo(),
         '/about': (context) => PageDemo(title: 'About'),
+        '/mdc': (context) => MaterialComponentsDemo()
       },
     );
   }
