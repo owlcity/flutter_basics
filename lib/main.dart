@@ -5,6 +5,7 @@ import 'package:learn_material/demo/container_box_decoration.dart';
 import 'package:learn_material/demo/draw_demo.dart';
 import 'package:learn_material/demo/grid_view_demo.dart';
 import 'package:learn_material/demo/listView_demo.dart';
+import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
 
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      // home: Home(),
+      home: NavigatorDemo(),
     );
   }
 }
