@@ -4,6 +4,7 @@ import 'package:learn_material/demo/bottom_navigationbar_demo.dart';
 import 'package:learn_material/demo/container_box_decoration.dart';
 import 'package:learn_material/demo/draw_demo.dart';
 import 'package:learn_material/demo/listView_demo.dart';
+import 'package:learn_material/demo/view_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +33,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
               title: Text('Material'),
@@ -59,6 +60,7 @@ class Home extends StatelessWidget {
                     Tab(icon: Icon(Icons.local_florist)),
                     Tab(icon: Icon(Icons.change_history)),
                     Tab(icon: Icon(Icons.directions_bike)),
+                    Tab(icon: Icon(Icons.star_border)),
                   ])),
           // body: Hello(),
           body: TabBarView(
@@ -67,6 +69,7 @@ class Home extends StatelessWidget {
               ContainerBoxDemo(),
               BasicDemo(),
               Icon(Icons.directions_bike, size: 128.0, color: Colors.black12),
+              ViewDemo()
             ],
           ),
           drawer: DrawerDemo(),
