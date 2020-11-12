@@ -8,6 +8,8 @@ import './radio_demo.dart';
 import './switch_demo.dart';
 import 'slider_demo.dart';
 import './datetime_demo.dart';
+import './simple_dialog_demo.dart';
+
 
 class MaterialComponentsDemo extends StatelessWidget {
   const MaterialComponentsDemo({Key key}) : super(key: key);
@@ -21,6 +23,7 @@ class MaterialComponentsDemo extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'SimpleDialog', page: SimpleDialogDemo()),
           ListItem(title: 'Date & Time', page: DateTimeDemo()),
           ListItem(title: 'Slider', page: SliderDemo()),
           ListItem(title: 'Switch', page: SwitchDemo()),
