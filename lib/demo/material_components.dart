@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learn_material/demo/button_demo.dart';
 import 'package:learn_material/demo/floating_action_button.dart';
+import 'package:learn_material/demo/popup_menu_button.dart';
 
 class MaterialComponentsDemo extends StatelessWidget {
   const MaterialComponentsDemo({Key key}) : super(key: key);
@@ -14,9 +16,14 @@ class MaterialComponentsDemo extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           ListItem(
+            title: 'PopupMenuButton', 
+            page: PopupMenuButtonDemo()
+          ),
+          ListItem(
             title: 'FloatingActionButton', 
             page: FloatingActionButtonDemo()
-          )
+          ),
+          ListItem(title: 'Button', page: ButtonDemo()),
         ],
       ),
     );
