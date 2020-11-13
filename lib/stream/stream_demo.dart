@@ -2,8 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class StreamDemo extends StatelessWidget {
-  const StreamDemo({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,26 +15,45 @@ class StreamDemo extends StatelessWidget {
 }
 
 class StreamDemoHome extends StatefulWidget {
-  StreamDemoHome({Key key}) : super(key: key);
-
   @override
   _StreamDemoHomeState createState() => _StreamDemoHomeState();
 }
 
 class _StreamDemoHomeState extends State<StreamDemoHome> {
-
   StreamSubscription _streamDemoSubscription;
+  StreamController<String> _streamDemo;
+
+  @override
+  void dispose() {
+    _streamDemo.close();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
 
-    print('create stream');
-    Stream<String> _streamDemo = Stream.fromFuture(fetchData());
+    print('Create a stream.');
+    // Stream<String> _streamDemo = Stream.fromFuture(fetchData());
+    _streamDemo = StreamController<String>();
 
     print('Start listening on a stream.');
-    _streamDemoSubscription = _streamDemo.listen(onData, onError: onError, onDone: onDone);
+    _streamDemoSubscription =
+        _streamDemo.stream.listen(onData, onError: onError, onDone: onDone);
 
     print('Initialize completed.');
+  }
+
+  void onDone() {
+    print('Done!');
+  }
+
+  void onError(error) {
+    print('Error: $error');
+  }
+
+  void onData(String data) {
+    print('$data');
   }
 
   void _pauseStream() {
@@ -54,22 +71,17 @@ class _StreamDemoHomeState extends State<StreamDemoHome> {
     _streamDemoSubscription.cancel();
   }
 
-  void onData(String data) {
-    print('listen- $data');
-  }
+  void _addDataToStream() async {
+    print('Add data to stream.');
 
-  void onDone() {
-    print('on Done!');
-  }
-
-  void onError(error) {
-    print('Error-$error');
+    String data = await fetchData();
+    _streamDemo.add(data);
   }
 
   Future<String> fetchData() async {
-    await Future.delayed(Duration(seconds: 3));
-    // return 'hello stream';
-    throw 'Something happened';
+    await Future.delayed(Duration(seconds: 5));
+    // throw 'Something happened';
+    return 'hello ~';
   }
 
   @override
@@ -79,6 +91,10 @@ class _StreamDemoHomeState extends State<StreamDemoHome> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            FlatButton(
+              child: Text('Add'),
+              onPressed: _addDataToStream,
+            ),
             FlatButton(
               child: Text('Pause'),
               onPressed: _pauseStream,
