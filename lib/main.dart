@@ -10,6 +10,7 @@ import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
 import 'package:learn_material/state/inherited_state.dart';
+import 'package:learn_material/state/scoped_model_demo.dart';
 import 'package:learn_material/state/state_management.dart';
 import './demo/navigator_demo.dart';
 
@@ -37,7 +38,10 @@ class MyApp extends StatelessWidget {
         '/': (context) => DefaultTabControllerDemo(),
         '/about': (context) => PageDemo(title: 'About'),
         '/mdc': (context) => MaterialComponentsDemo(),
-        '/state-management': (context) => StateManagementDemo()
+        // '/state-management': (context) => StateManagementDemoOne()
+        // '/state-management': (context) => StateManagementDemo()
+        '/state-management': (context) => ScopedModelDemo()
+
       },
     );
   }
