@@ -12,6 +12,7 @@ import 'package:learn_material/demo/view_demo.dart';
 import 'package:learn_material/state/inherited_state.dart';
 import 'package:learn_material/state/scoped_model_demo.dart';
 import 'package:learn_material/state/state_management.dart';
+import 'package:learn_material/stream/stream_demo.dart';
 import './demo/navigator_demo.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Home(),
       // home: NavigatorDemo(),
-      initialRoute: '/state-management',
+      initialRoute: '/stream',
       routes: {
         // '/': (context) =>  NavigatorDemo(),
         '/': (context) => DefaultTabControllerDemo(),
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
         '/mdc': (context) => MaterialComponentsDemo(),
         // '/state-management': (context) => StateManagementDemoOne()
         // '/state-management': (context) => StateManagementDemo()
-        '/state-management': (context) => ScopedModelDemo()
+        '/state-management': (context) => ScopedModelDemo(),
+        '/stream': (context) => StreamDemo()
 
       },
     );
