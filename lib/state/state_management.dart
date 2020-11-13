@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class StateManagementDemo extends StatefulWidget {
-  StateManagementDemo({Key key}) : super(key: key);
+class StateManagementDemoOne extends StatefulWidget {
+  StateManagementDemoOne({Key key}) : super(key: key);
 
   @override
-  _StateManagementDemoState createState() => _StateManagementDemoState();
+  _StateManagementDemoOneState createState() => _StateManagementDemoOneState();
 }
 
-class _StateManagementDemoState extends State<StateManagementDemo> {
+class _StateManagementDemoOneState extends State<StateManagementDemoOne> {
   int _count = 1;
 
   void _increaseCount() {

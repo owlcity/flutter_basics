@@ -9,6 +9,7 @@ import 'package:learn_material/demo/material_components.dart';
 import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
+import 'package:learn_material/state/inherited_state.dart';
 import 'package:learn_material/state/state_management.dart';
 import './demo/navigator_demo.dart';
 
