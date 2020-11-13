@@ -9,6 +9,7 @@ import 'package:learn_material/demo/material_components.dart';
 import 'package:learn_material/demo/navigator_demo.dart';
 import 'package:learn_material/demo/sliver_demo.dart';
 import 'package:learn_material/demo/view_demo.dart';
+import 'package:learn_material/state/state_management.dart';
 import './demo/navigator_demo.dart';
 
 void main() {
@@ -29,12 +30,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Home(),
       // home: NavigatorDemo(),
-      initialRoute: '/mdc',
+      initialRoute: '/state-management',
       routes: {
         // '/': (context) =>  NavigatorDemo(),
         '/': (context) => DefaultTabControllerDemo(),
         '/about': (context) => PageDemo(title: 'About'),
-        '/mdc': (context) => MaterialComponentsDemo()
+        '/mdc': (context) => MaterialComponentsDemo(),
+        '/state-management': (context) => StateManagementDemo()
       },
     );
   }
