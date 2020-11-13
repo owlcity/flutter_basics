@@ -1,11 +1,19 @@
 class Post {
-  const Post({this.title, this.author, this.imageUrl, this.description});
+  const Post({
+    this.title,
+    this.author,
+    this.imageUrl,
+    this.description,
+  });
 
   final String title;
   final String author;
   final String imageUrl;
   final String description;
+
+  final selected = false;
 }
+
 
 final List<Post> posts = [
   Post(
